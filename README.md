@@ -1,18 +1,18 @@
-- Here I have used the python to solve the problem mentioned in the problem_statement.txt
+- Here I have used Python to solve the problem mentioned in the problem_statement.txt
 - to run the code you can clone the repo and run the python python_soln.py
 - You can try with different days by changing the value of days
-- Please make sure that you have python installed and running python_soln.py 
-- from the same directory where this file exist
+- Please make sure that you have Python installed and running python_soln.py 
+- from the same directory where this file exists
 
 
 
-Please find below my approach that i used to solve the problem
+Please find below the approach that I used to solve the problem
 
 
-- In the problem statement we have two problem 1st is to find the number of ways to attend the class at N days and another to find the probability of not missing graduation ceremoney
+- In the problem statement we have two problems 1st is to find the number of ways to attend the class at N days and another to find the probability of not missing the graduation ceremony
 
 
-Lets check how manyally we can find the number of ways
+Let's check how manually we can find the number of ways
 days=1, ways=1
 
 days=2, ways=2
@@ -51,7 +51,5 @@ days=5, ways=14
 10001
 
 
-from the above example we can see that Nth day have relation with previoud days and that can be formulated as
-
-
+from the above example, we can see that the Nth day has a relation with previous days and that can be formulated as
 f(n) = f(n - 1) +  f(n - 2) + f(n - 3) + f(n - 4)
