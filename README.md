@@ -9,46 +9,29 @@
 Please find below the approach that I used to solve the problem
 
 
-- In the problem statement we have two problems 1st is to find the number of ways to attend the class at N days and another to find the probability of not missing the graduation ceremony
+- In the problem statement we have two problems 1st is to find the number of ways to attend the class at N days and another to find the probability of missing the graduation ceremony
 
 
-Let's check how manually we can find the number of ways
-days=1, ways=1
+- Let's check how manually we can find the number of ways to attend classes
+days=1, ways=2    0, 1
 
-days=2, ways=2
-11
-01
+days=2, ways=4    11, 01, 00, 10 
 
-days=3, ways=4
-111
-011
-101
-001
+days=3, ways=8    111, 011, 101, 110, 000, 001, 010, 100
 
-days=4, ways=7
-1111
-0111
-1011
-1101
-0011
-0101
-1001
+days=4, ways=15   1111, 0111, 1011, 1101, 1110, 0011, 0101, 0110, 1001, 1010, 1100, 0001, 0010, 1000, 0000
 
-days=5, ways=14
-11111
-01111
-10111
-11011
-11101
-00111
-01011
-01101
-10011
-10101
-11001
-00011
-00101
-10001
+
+- Let's check how manually we can find the number of ways to miss the ceremony
+
+days=1, ways=1  0
+
+days=2, ways=2  00, 10
+
+days=3, ways=4  000, 110, 010, 100
+
+days=4, ways=7  1110, 0110, 1010, 1100, 0010, 0100, 1000
+
 
 
 from the above example, we can see that the Nth day has a relation with previous days and that can be formulated as
